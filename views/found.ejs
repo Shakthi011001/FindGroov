@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groov</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/found.css" />
+</head>
+
+<body>
+    <div class="nav d-flex justify-content-between p-3">
+      <a href="/find"> <h3 class=""><b>GroovFind</b></h3></a> 
+        <h3 id="Greetings" class="">Good Morning</h3>
+    </div>
+    <h3 class="rec">Your Recommendations</h3>
+    <div class="bottomwhitespace" class="centre">
+      <div class="btn-group">
+        <button class="button">My first button</button>
+        <button class="button">My second button</button>
+        <button class="button">My third button</button>
+      </div>
+    </div>
+      <div class="button">
+        <a href="/Detect">Detect Again</a>
+      </div>
+
+    </div>
+    <img class="wave" src="/img/bluewave.png" alt="" />
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    let myDate = new Date();
+    let hrs = myDate.getHours();
+
+    let greet;
+
+    if (hrs < 12) greet = "Good Morning";
+    else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
+    else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
+
+    document.getElementById("Greetings").innerHTML = greet;
+</script>
+
+</html>
