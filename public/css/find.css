@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.nav {
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: sticky;
+}
+
+.info {
+  width: 50%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 84px;
+  color: #000000;
+}
+.tag {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+.button {
+  padding: 2%;
+  font-size: 30px;
+  background-color: #6f00fc;
+  color: white;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.wave {
+  position: absolute;
+  top: 100vh;
+  transform: translateY(-100%);
+  width: 100%;
+}
